@@ -24,13 +24,25 @@ time, mark, audio, video {
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
-h1{
-    margin-top: 10px;
+body{
+    font-family: Open Sans;
+    background-color: black;
+    color: white;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: coral;
+}
+a.title {
+    display: flex;
+    margin: 10px auto;
     font-family: Raleway;
     font-size: 40px;
     font-weight: bolder;
     color: coral;
-    text-align: center;
+    justify-content: center;
 }
 nav{
     font-family: Raleway;
@@ -38,10 +50,6 @@ nav{
     margin: 15px auto;
     display: flex;
 }
-.hide{
-    display: none;
-}
-
 nav ul{
     display: inline;
     margin: 0 auto;
@@ -55,8 +63,22 @@ nav li {
    padding: 20px;
    align-content: center;
 }
-.container1 {
+nav.li-submenu{
+    position: relative;
+    display: block;
+}
+nav ul.submenu{
+    display: none;
+    position: absolute;
+}
+nav ul li:hover .submenu {
+    display: block;
+    color: white;
+    transition: all .3s;
+}
+.container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -64,5 +86,48 @@ nav li {
     width: 25%;
     height: auto;
     overflow: hidden;
+    background-size: contain;
     margin: 5px;
+    position: relative;
+}
+div.img1:hover{
+    display: flex;
+    background-size: contain;
+    background-color: rgba(243, 134, 134, 0.5);
+    transition: top 50% 0.5s ease-in-out;
+}
+.hover{
+    position: absolute; 
+    display: flex;
+    background-size: contain;
+    background-color: rgba(243, 134, 134, 0.5);
+    transition: top 50% 0.5s ease-in-out;
+}
+.date, .comment{
+    overflow: hidden;
+    display: none;
+}
+.date{
+    font-size: 12px
+}
+.comment{
+    font-size: 14px;
+}
+.container2{
+    display: block;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 250px;
+    align-items: center;
+}
+.second-section{
+    display: inline-flex;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+    background-size: contain;
+    align-items: flex-start;
+    border-radius: 10%;
 }
