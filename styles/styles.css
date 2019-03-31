@@ -23,27 +23,46 @@ time, mark, audio, video {
 
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Open Sans', sans-serif; */
-nav{
-    font-family: Raleway;
-    font-weight: bold;
-}
-.hide{
-    display: none;
-}
+
 h1{
+    margin-top: 10px;
     font-family: Raleway;
     font-size: 40px;
     font-weight: bolder;
     color: coral;
     text-align: center;
 }
+nav{
+    font-family: Raleway;
+    font-weight: bold;
+    margin: 15px auto;
+    display: flex;
+}
+.hide{
+    display: none;
+}
+
 nav ul{
     display: inline;
-    align-content: center;
     margin: 0 auto;
+    align-content: center;
+    padding: 0px;
 }
-.nav li {
+nav li {
    display: inline;
-   font-size: 20px;
+   margin: 0 auto;
+   font-size: 16px;
    padding: 20px;
+   align-content: center;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.img1{
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    margin: 5px;
 }
