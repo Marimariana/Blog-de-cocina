@@ -29,10 +29,10 @@ body{
     background-color: black;
     color: white;
 }
-a{
+nav a{
     color: white;
 }
-a:hover{
+nav a:hover{
     color: coral;
 }
 a.title {
@@ -127,7 +127,60 @@ div.img1:hover{
     height: 200px;
     margin: 5px;
     overflow: hidden;
-    background-size: contain;
     align-items: flex-start;
-    border-radius: 10%;
+}
+.second-section:hover{
+    background-color: white;
+    color: coral;
+}
+.image{
+    background-image: url(images/platos.jpeg);
+    position: relative;
+    border-radius: 15%;
+    overflow: hidden;
+    background-size: contain;
+    height: 200px;
+}
+.pill-button{
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    border-radius: 45%;
+    align-self: center;
+}
+.container3{
+    display: block;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.video{
+    display: block;
+    justify-content: flex-start;
+    width: 62%;
+}
+aside{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.profile-pic{
+    border-radius: 100%;
+    width: 150px;
+    background-position: center;
+}
+@media screen and (max-width: 450px) {
+    .container, .container2 {
+      width: 100%;
+    }
 }
