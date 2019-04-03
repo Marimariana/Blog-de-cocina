@@ -132,52 +132,76 @@ div.img1:hover{
 .second-section:hover{
     background-color: white;
     color: coral;
+    background-image: none;
 }
 .image{
     background-image: url(images/platos.jpeg);
     position: relative;
     border-radius: 15%;
     overflow: hidden;
-    background-size: contain;
+    background-size: 25%;
     height: 200px;
+    background-position: center;
 }
 .pill-button{
-    display: flex;
+    display: inline-block;
     margin: 0 auto;
     width: 100px;
-    padding: 10px;
+    padding: 8px 68px;
+    text-align: center;
     color: black;
     font-weight: bold;
     background-color: white;
     position: absolute;
     align-content: center;
     justify-content: center;
-    border-radius: 45%;
+    border-radius: 21px;
     align-self: center;
+    vertical-align: middle;
 }
+.pill-button:hover{
+    background-color: coral;
+    color: white;
+    transition-property: all 0.5s;
+}
+
 .container3{
     display: block;
     width: 80%;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     align-items: center;
+    align-content: stretch;
+    flex-direction: row;
 }
 .video{
-    display: block;
+    display: flex;
+    margin: 0px;
     justify-content: flex-start;
     width: 62%;
+    align-content: flex-start;
 }
-aside{
+.aside{
     display: flex;
     justify-content: right;
     flex-direction: column;
     align-content: center;
     align-items: center;
+    width: 28%;
+    margin: 0px;
 }
 .profile-pic{
     border-radius: 100%;
-    width: 150px;
+    width: 200px;
+    height: 200px;
     background-position: center;
+    background-size: contain;
+    overflow: hidden;
+}
+.about{
+    background-color: coral;
+    display: inline;
+    font-weight: bold;
 }
 @media screen and (max-width: 450px) {
     .container, .container2 {
