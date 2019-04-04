@@ -175,9 +175,9 @@ div.img1:hover{
 .container3{
     display: flex;
     width: 80%;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
-    align-items: center;
+    align-items: stretch;
     align-content: stretch;
     flex-direction: row;
 }
@@ -186,10 +186,13 @@ div.img1:hover{
     margin: 0px;
     justify-content: right;
     width: 62%;
+    height: 400px;
     flex-direction: column;
 }
 .photo-caption{
     display: block;
+    margin-top: 15px;
+    font-size: 14px;
 }
 .aside{
     display: flex;
@@ -202,6 +205,7 @@ div.img1:hover{
     text-align: center;
 }
 .profile-pic{
+    margin-top: 10px;
     border-radius: 100%;
     width: 200px;
     height: 200px;
@@ -209,22 +213,44 @@ div.img1:hover{
     background-size: contain;
     overflow: hidden;
 }
+.title{
+    font-family: Raleway;
+    font-size: 24px;
+}
+.paragraph{
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+}
 .container4{
     border-top: 1px solid gray;
-    padding: 15px;
-    margin: 15px;
+    padding: 15px 0px;
+    margin: 15px 10%;
+    width: 80%;
 }
 .image-c4{
+    background-image: url(images/nota1.jpg);
     border-radius: 15%;
     background-size: contain;
 }
+.image-c4-2{
+    background-image: url(images/nota2.jpg)
+}
 .about{
-    background-color: coral;
+    background-color: #ffc4ae;
+    color: black;
     display: inline;
     font-weight: bold;
+    width: 302.39px;
+    padding: 10px;
+}
+a.about{
+    margin-top: 10px;
+    color: black;
+
 }
 @media screen and (max-width: 450px) {
-    .container, .container2 {
+    .container, .container2, .container3, .container4 {
       width: 100%;
     }
 }
