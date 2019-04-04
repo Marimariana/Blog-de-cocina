@@ -128,6 +128,7 @@ div.img1:hover{
     margin: 5px;
     overflow: hidden;
     align-items: flex-start;
+    position: relative;
 }
 .second-section:hover{
     background-color: white;
@@ -142,6 +143,11 @@ div.img1:hover{
     background-size: 25%;
     height: 200px;
     background-position: center;
+}
+.image:hover{
+    background-color: white;
+    background-image: none;
+    position: absolute;
 }
 .pill-button{
     display: inline-block;
@@ -163,10 +169,11 @@ div.img1:hover{
     background-color: coral;
     color: white;
     transition-property: all 0.5s;
+    padding: 8px 68px;
 }
 
 .container3{
-    display: block;
+    display: flex;
     width: 80%;
     justify-content: center;
     margin: 0 auto;
@@ -177,9 +184,12 @@ div.img1:hover{
 .video{
     display: flex;
     margin: 0px;
-    justify-content: flex-start;
+    justify-content: right;
     width: 62%;
-    align-content: flex-start;
+    flex-direction: column;
+}
+.photo-caption{
+    display: block;
 }
 .aside{
     display: flex;
@@ -189,6 +199,7 @@ div.img1:hover{
     align-items: center;
     width: 28%;
     margin: 0px;
+    text-align: center;
 }
 .profile-pic{
     border-radius: 100%;
@@ -197,6 +208,15 @@ div.img1:hover{
     background-position: center;
     background-size: contain;
     overflow: hidden;
+}
+.container4{
+    border-top: 1px solid gray;
+    padding: 15px;
+    margin: 15px;
+}
+.image-c4{
+    border-radius: 15%;
+    background-size: contain;
 }
 .about{
     background-color: coral;
