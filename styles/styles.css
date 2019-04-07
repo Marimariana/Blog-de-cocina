@@ -31,6 +31,7 @@ body{
 }
 nav a{
     color: white;
+    background-color: black;
 }
 nav a:hover{
     color: coral;
@@ -43,6 +44,7 @@ a.title {
     font-weight: bolder;
     color: coral;
     justify-content: center;
+    width: 30%;
 }
 nav{
     font-family: Raleway;
@@ -74,7 +76,8 @@ nav ul.submenu{
 nav ul li:hover .submenu {
     display: block;
     color: white;
-    transition: all .3s;
+    transition: all .3s ease-in-out;
+    background-color: black;
 }
 .container {
     display: flex;
@@ -91,21 +94,27 @@ nav ul li:hover .submenu {
     position: relative;
 }
 div.img1:hover{
-    display: flex;
+    display: block;
     background-size: contain;
     background-color: rgba(243, 134, 134, 0.5);
-    transition: top 50% 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+    top: 70%;
+    height: 30%;
 }
-.hover{
+
+.hover:hover{
     position: absolute; 
     display: flex;
     background-size: contain;
     background-color: rgba(243, 134, 134, 0.5);
-    transition: top 50% 0.5s ease-in-out;
+    transition: top 0.5s ease-in-out;
+    top: 70%;
+    height: 30%;
+
 }
-.date, .comment{
+.date, .comment, .date2 {
     overflow: hidden;
-    display: none;
+    display: block;
 }
 .date{
     font-size: 12px
@@ -134,8 +143,9 @@ div.img1:hover{
     background-color: white;
     color: coral;
     background-image: none;
+    border-radius: 15%;
 }
-.image{
+.img2{
     background-image: url(images/platos.jpeg);
     position: relative;
     border-radius: 15%;
@@ -144,8 +154,9 @@ div.img1:hover{
     height: 200px;
     background-position: center;
 }
-.image:hover{
+.img2:hover{
     background-color: white;
+    border-radius: 15%;
     background-image: none;
     position: absolute;
 }
@@ -235,6 +246,9 @@ div.img1:hover{
 }
 .image-c4-2{
     background-image: url(images/nota2.jpg)
+}
+.date2{
+    display: inline;
 }
 .about{
     background-color: #ffc4ae;
