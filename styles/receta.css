@@ -85,11 +85,11 @@ nav ul li:hover .submenu {
     background-size: cover;
 }
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
+    margin: 0 auto;
     overflow: hidden;
+    width: 50%;
+    min-width: 400px;
+    max-width: 700px;
 }
 nav ol li {
     display: inline;
@@ -102,21 +102,37 @@ nav ol li {
     color: gainsboro;
 }
 .container-receta {
-    display: flex;
-    justify-content: center;
     overflow: hidden;
 }
 img {
     border-radius: 25px;
 }
-
-.social-media {
-    padding: 10px;
-    margin: 10px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+.sidebar {
+    height: 68%;
+    width: 50px;
+    overflow-x: hidden;
+    padding: 50px;
+    margin-right: 10px;
+    padding-top: 16px;
+  }
+  .social-media {
+      position: absolute;
+      top: 452px;
+      left: 120px;
+  }
 .social-media li {
-    margin: 10px 0 10px;
+    margin: 10px auto 10px;
+}
+.image-receta {
+    position: relative;
+}
+.interaction-list {
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+
+}
+.interaction-list li {
+    display: inline;
+    padding: 8px;
 }
