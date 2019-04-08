@@ -242,3 +242,139 @@ footer i {
     padding: 10px;
     padding-bottom: 30px;
 }
+
+/*PHONES*/
+@media (max-width: 576px) { 
+    .title{
+        text-align: center;
+        }
+        nav.desktop{
+         display: none;
+        }
+        nav.mobile{
+            display: block;
+            background-color: coral;
+            color: white;
+            margin: 0 auto;
+            height: 30px;
+            padding: 8px 68px;
+            text-align: center;
+            font-weight: bold;
+            position: absolute;
+            align-content: center;
+            justify-content: center;
+            border-radius: 21px;
+            align-self: center;
+            position: relative;
+        }
+        nav li {
+            display: none;
+        }
+        nav li:hover{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+        }
+        ul p {
+            display: inline-flex;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 15px;
+        }
+        ul{
+            width: 100px;
+            text-align: center;
+        }
+    .dropbtn {
+        background-color: coral;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        font-family: Raleway;
+        font-weight: bold;
+      }
+      .fa-caret-down{
+          margin-left: 10px;
+      }
+      .dropdown {
+        position: relative;
+        display: block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: coral;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        padding: 12px 16px;
+        display: block;
+      }
+      .dropdown-content a:hover {
+          color:coral;
+          background-color: #ddd;
+        }
+      .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      .dropdown:hover .dropbtn {
+          color: coral;
+          background-color:  #ddd;
+        }
+
+ }
+ .sidebar {
+    display: flex;
+        width: 70%;
+        overflow: hidden;
+        padding: 50px;
+      }
+      .social-media {
+          position: absolute;
+          left: 15%;
+
+
+
+
+
+
+
+
+ footer ul li{
+    display: inline;
+ }
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+@media screen (max-width: 768px) {
+    .title{
+    text-align: center;
+    }
+    nav.mobile{
+     display: none;
+    }
+}
+/*MEDIUM*/
+@media screen (max-width: 992px) {
+    nav.mobile{
+    display: none;
+    }
+}
+/*LARGE*/
+@media screen (max-width: 1200px) { 
+    nav.mobile{
+        display: none;
+        }
+ }
