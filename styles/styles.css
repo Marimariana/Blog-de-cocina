@@ -179,7 +179,7 @@ nav li {
     display: block;
     width: 80%;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 35px auto 20px;
     height: 250px;
     align-items: center;
 }
@@ -237,7 +237,7 @@ nav li {
 }
 
 .container3{
-    width: 30%;
+    width: 25%;
     margin: 0 auto;
     float: right;
     margin-right: 10%;
@@ -252,8 +252,8 @@ nav li {
 }
 .photo-caption{
     display: block;
-    margin-top: 15px;
-    font-size: 14px;
+    margin:5px 0 30px 0;
+    font-size: 12px;
 }
 .aside{
     display: flex;
@@ -310,6 +310,23 @@ a.about{
     margin-top: 10px;
     color: black;
 
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+}
+footer ul li{
+    display: inline;
+    margin: 0 10px 30px 20px;
+    font-size: 12px;
+    padding: 20px;
+}
+footer i {
+    padding: 10px;
+    padding-bottom: 30px;
 }
 @media screen and (max-width: 450px) {
     .container, .container2, .container3, .container4 {
