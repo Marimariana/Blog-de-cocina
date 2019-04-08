@@ -237,13 +237,10 @@ nav li {
 }
 
 .container3{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
+    width: 30%;
     margin: 0 auto;
-    align-items: stretch;
-    align-content: stretch;
-    flex-direction: row;
+    float: right;
+    margin-right: 10%;
 }
 .video{
     display: flex;
@@ -264,7 +261,7 @@ nav li {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 28%;
+    width: 90%;
     margin: 0px;
     text-align: center;
 }
@@ -287,9 +284,7 @@ nav li {
     font-size: 15px;
 }
 .container4{
-    border-top: 1px solid gray;
-    padding: 15px 0px;
-    margin: 15px 10%;
+    margin: 0px auto;
     width: 80%;
 }
 .image-c4{
