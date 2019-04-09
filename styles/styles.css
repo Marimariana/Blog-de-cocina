@@ -199,9 +199,8 @@ nav li {
     border-radius: 15%;
 }
 .img2{
-    background-image: url(images/platos.jpeg);
-    position: relative;
-    border-radius: 15%;
+    background-image: url(..images/platos.jpeg);
+    border-radius: 25%;
     overflow: hidden;
     background-size: 25%;
     height: 200px;
@@ -242,19 +241,6 @@ nav li {
     float: right;
     margin-right: 10%;
 }
-.video{
-    display: flex;
-    margin: 0px;
-    justify-content: right;
-    width: 62%;
-    height: 400px;
-    flex-direction: column;
-}
-.photo-caption{
-    display: block;
-    margin:5px 0 30px 0;
-    font-size: 12px;
-}
 .aside{
     display: flex;
     justify-content: right;
@@ -283,21 +269,6 @@ nav li {
     line-height: 20px;
     font-size: 15px;
 }
-.container4{
-    margin: 0px auto;
-    width: 80%;
-}
-.image-c4{
-    background-image: url(images/nota1.jpg);
-    border-radius: 15%;
-    background-size: contain;
-}
-.image-c4-2{
-    background-image: url(images/nota2.jpg)
-}
-.date2{
-    display: inline;
-}
 .about{
     background-color: #ffc4ae;
     color: black;
@@ -311,12 +282,74 @@ a.about{
     color: black;
 
 }
+.container4{
+    margin: 0px auto 40px;
+    width: 70%;
+}
+.video{
+    display: flex;
+    margin: 0px;
+    justify-content: right;
+    width: 62%;
+    height: 400px;
+    flex-direction: column;
+}
+.photo-caption{
+    display: block;
+    margin:5px 0 30px 0;
+    font-size: 12px;
+}
+.notas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 20px;
+}
+.notas img {
+    border-radius: 15%;
+    margin-bottom: 20px;
+}
+.interaction-list {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px;
 
+}
+.interaction-list li {
+    display: inline;
+    padding: 0px;
+}
+.autor-details {
+    float: left;
+}
+.interaction-icon {
+    float: right;
+}
+.interaction-icon li {
+    margin-left: 8%;
+}
+.art .title{
+    margin-top: 30px;
+}
+.art .paragraph{
+    margin-top: 10px;
+}
+.info {
+    background-color: #ffc4ae;
+    color: black;
+    display: inline;
+    font-weight: bold;
+    width: 300px;
+    padding: 10px;
+    margin: 40px auto 40px;
+}
 /*FOOTER*/
 
 footer {
     text-align: center;
     border-bottom: 1px solid gainsboro;
+    margin-bottom: 40px;
 }
 footer ul li{
     display: inline;
