@@ -71,10 +71,11 @@ nav ul.submenu{
     display: none;
     position: absolute;
 }
-nav ul li:hover .submenu {
+nav ul li:hover .submenu li{
     display: block;
     color: white;
     transition: all .3s;
+    position: absolute;
 }
 .container {
     display: flex;
