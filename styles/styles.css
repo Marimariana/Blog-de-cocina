@@ -202,7 +202,6 @@ nav li {
     background-image: url(..images/platos.jpeg);
     border-radius: 25%;
     overflow: hidden;
-    background-size: 25%;
     height: 200px;
     background-position: center;
 }
@@ -283,15 +282,16 @@ a.about{
 
 }
 .container4{
-    margin: 0px auto 40px;
-    width: 70%;
+    margin: 0px auto 60px;
+    overflow: hidden;
+    width: 50%;
+    min-width: 400px;
+    max-width: 900px;
 }
 .video{
     display: flex;
     margin: 0px;
     justify-content: right;
-    width: 62%;
-    height: 400px;
     flex-direction: column;
 }
 .photo-caption{
@@ -302,13 +302,11 @@ a.about{
 .notas {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     border-top: 1px solid #f1f1f1;
     padding-top: 20px;
 }
 .notas img {
     border-radius: 15%;
-    margin-bottom: 20px;
 }
 .interaction-list {
     font-size: 12px;
@@ -361,8 +359,9 @@ footer i {
     padding: 10px;
     padding-bottom: 30px;
 }
-@media screen and (max-width: 450px) {
-    .container, .container2, .container3, .container4 {
-      width: 100%;
+@media (min-width: 576px) {
+    nav {
+        display: none;
     }
+    
 }
