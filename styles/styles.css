@@ -64,6 +64,22 @@ nav li {
    padding: 20px;
    align-content: center;
 }
+.menuResponsive {
+    display: none;
+    margin: 10px auto;
+    align-content: center;
+    background-color: coral;
+    color: white;
+    width: 100px;
+    padding: 12px 160px;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: bold;
+    border-radius: 14px;
+}
+.menu .fa-bars{
+   margin: 0 20px 0 10px;
+}
 /* Dropdown Button */
 .dropbtn {
     background-color: #000000;
@@ -74,38 +90,36 @@ nav li {
     font-family: Raleway;
     font-weight: bold;
   }
-.fa-caret-down{
-    margin-left: 10px;
+  .fa-caret-down{
+      margin-left: 10px;
   }
-.dropdown {
+  .dropdown {
     position: relative;
     display: inline-block;
-}
-.dropdown-content {
+  }
+  .dropdown-content {
     display: none;
     position: absolute;
-}
-nav ul li:hover .submenu li{
-    display: block;
-    color: white;
-    transition: all .3s;
-    position: absolute;
-}
-.dropdown-content a {
+    background-color: #141414;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
     padding: 12px 16px;
     display: block;
   }
-.dropdown-content a:hover {
+  .dropdown-content a:hover {
       color: coral;
       background-color: #ddd;
     }
-.dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content {
       display: block;
     }
-.dropdown:hover .dropbtn {
+  .dropdown:hover .dropbtn {
       color: coral;
       background-color: #4747471f;
-    }
+  }
 .container {
     display: flex;
     align-items: center;
@@ -178,44 +192,29 @@ nav ul li:hover .submenu li{
 }
 /* SECOND SECTION */
 .container2{
-    display: block;
-    width: 80%;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     margin: 35px auto 20px;
+    width: 95%%;
     height: 250px;
     align-items: center;
 }
 .second-section{
     display: inline-flex;
-    width: 30%;
+    width: 27%;
     height: 200px;
-    margin: 5px;
+    margin: 2px 8px 2px;
     overflow: hidden;
-    align-items: flex-start;
-    position: relative;
-}
-.second-section:hover{
-    background-color: white;
-    color: coral;
-    background-image: none;
-    border-radius: 15%;
 }
 .img2{
-    background-image: url(..images/platos.jpeg);
     border-radius: 25%;
     overflow: hidden;
     height: 200px;
     background-position: center;
 }
-.img2:hover{
-    background-color: white;
-    border-radius: 25%;
-    background-image: none;
-    position: absolute;
-}
 .pill-button{
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 25px;
     width: 100px;
     padding: 8px 68px;
     text-align: center;
@@ -223,11 +222,8 @@ nav ul li:hover .submenu li{
     font-weight: bold;
     background-color: white;
     position: absolute;
-    align-content: center;
-    justify-content: center;
     border-radius: 21px;
     align-self: center;
-    vertical-align: middle;
 }
 .pill-button:hover{
     background-color: coral;
@@ -249,7 +245,7 @@ nav ul li:hover .submenu li{
     align-content: center;
     align-items: center;
     width: 90%;
-    margin: 0px 20px;
+    margin: 0px;
     text-align: center;
 }
 .profile-pic{
@@ -265,28 +261,23 @@ nav ul li:hover .submenu li{
     font-family: Raleway;
     font-size: 24px;
 }
-.paragraph, .paragraph2 {
+.paragraph{
     text-align: center;
-    line-height: 16px;
-    font-size: 14px;
-}
-.paragraph2{
-    text-align: left;
-    margin: 20px 0px;
+    line-height: 20px;
+    font-size: 15px;
 }
 .about{
     background-color: #ffc4ae;
     color: black;
     display: inline;
     font-weight: bold;
-    width: 100%;
+    width: 302.39px;
     padding: 10px;
 }
 a.about{
-    margin-top: 0px;
-    color: black;
-    width: 100%;
     margin-top: 10px;
+    color: black;
+
 }
 .container4{
     margin: 0px auto 60px;
@@ -312,19 +303,21 @@ a.about{
     justify-content: flex-start;
     border-top: 1px solid #f1f1f1;
     padding-top: 20px;
-    width: 70%;
+    padding-bottom: 20px;
 }
-.notas img {
+.nota1 img {
     border-radius: 15%;
 }
 .nota1{
     width: 350px;
     margin-right: 30px;
+    border-radius: 15%;
  }
 .interaction-list {
     font-size: 12px;
     text-align: center;
     padding: 0px;
+
 }
 .interaction-list li {
     display: inline;
@@ -342,9 +335,10 @@ a.about{
 .art .title{
     margin-top: 30px;
 }
-.art .paragraph{
-    margin-top: 10px;
+.art .paragraph2{
+    margin: 10px 0 30px 0;
 }
+
 .info {
     background-color: #ffc4ae;
     color: black;
@@ -352,7 +346,7 @@ a.about{
     font-weight: bold;
     width: 300px;
     padding: 10px;
-    margin: 40px auto;
+    margin: 40px auto 40px;
 }
 /*FOOTER*/
 
@@ -371,11 +365,46 @@ footer i {
     padding: 10px;
     padding-bottom: 30px;
 }
-@media (min-width: 576px) {
-    nav {
+
+/*RESPONSIVE*/
+
+@media (max-width: 576px) {
+    nav ul{
         display: none;
     }
-    
+    .menuResponsive {
+        display: inline-block;
+    }
+    .container {
+        display: block;
+        width: 60vh;
+        margin: 0 auto;
+    }
+    .img-2,.img-3,.img-4 {
+        display: none;
+    }
+    .img-1 {
+        padding: 0px;
+    }
+    .container2 {
+        display: block;
+        width: 75vh;
+        height: 675px;
+        margin: 0 auto;
+    }
+    .second-section {
+        width: 75%;
+        height: 300px;
+    }
+    .img2 {
+        height: 295px;
+    }
+    .pill-button {
+        margin: 0 100px;
+        width: 180px;
+        padding: 15px 70px;
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 576px) { ... }
