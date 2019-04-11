@@ -74,33 +74,35 @@ nav li {
     font-family: Raleway;
     font-weight: bold;
   }
-  .fa-caret-down{
-      margin-left: 10px;
+.fa-caret-down{
+    margin-left: 10px;
   }
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  .dropdown-content {
+}
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #141414;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
+}
+nav ul li:hover .submenu li{
+    display: block;
+    color: white;
+    transition: all .3s;
+    position: absolute;
+}
+.dropdown-content a {
     padding: 12px 16px;
     display: block;
   }
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
       color: coral;
       background-color: #ddd;
     }
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
       display: block;
     }
-  .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
       color: coral;
       background-color: #4747471f;
     }
@@ -207,7 +209,7 @@ nav li {
 }
 .img2:hover{
     background-color: white;
-    border-radius: 15%;
+    border-radius: 25%;
     background-image: none;
     position: absolute;
 }
@@ -247,7 +249,7 @@ nav li {
     align-content: center;
     align-items: center;
     width: 90%;
-    margin: 0px;
+    margin: 0px 20px;
     text-align: center;
 }
 .profile-pic{
@@ -263,23 +265,28 @@ nav li {
     font-family: Raleway;
     font-size: 24px;
 }
-.paragraph{
+.paragraph, .paragraph2 {
     text-align: center;
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 16px;
+    font-size: 14px;
+}
+.paragraph2{
+    text-align: left;
+    margin: 20px 0px;
 }
 .about{
     background-color: #ffc4ae;
     color: black;
     display: inline;
     font-weight: bold;
-    width: 302.39px;
+    width: 100%;
     padding: 10px;
 }
 a.about{
-    margin-top: 10px;
+    margin-top: 0px;
     color: black;
-
+    width: 100%;
+    margin-top: 10px;
 }
 .container4{
     margin: 0px auto 60px;
@@ -302,17 +309,22 @@ a.about{
 .notas {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     border-top: 1px solid #f1f1f1;
     padding-top: 20px;
+    width: 70%;
 }
 .notas img {
     border-radius: 15%;
 }
+.nota1{
+    width: 350px;
+    margin-right: 30px;
+ }
 .interaction-list {
     font-size: 12px;
     text-align: center;
     padding: 0px;
-
 }
 .interaction-list li {
     display: inline;
@@ -340,7 +352,7 @@ a.about{
     font-weight: bold;
     width: 300px;
     padding: 10px;
-    margin: 40px auto 40px;
+    margin: 40px auto;
 }
 /*FOOTER*/
 
@@ -365,3 +377,14 @@ footer i {
     }
     
 }
+
+@media (max-width: 576px) { ... }
+
+
+@media (max-width: 768px) { ... }
+
+
+@media (max-width: 992px) { ... }
+
+
+@media (max-width: 1200px) { ... }
