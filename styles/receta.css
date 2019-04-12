@@ -410,39 +410,14 @@ img.image-receta{
     nav.mobile {
         display: none;
         }
-    i.fas.fa-bars{
-        display: none;
-        }
     .footer-mobile{
         display: none;
-    } 
+        }
     ul.mobile{
         display: none;
-    }
+        }
     li.mobile{
         display: none;
-    }
-    .social-media {
-        position: absolute;
-        left: 10%;
-        position: static;
-    }
-    div.social-media.sidebar{
-        display: flex;
-        flex-direction: row;
-        padding: 0px;
-        margin: 0px auto;
-        height: 50px;
-    }
-    .social-media.sidebar ul{
-        display: flex;
-        flex-direction: row;
-        flex-flow: row;
-        margin: 0 auto;
-    }
-    .social-media li{
-        margin: 5px;
-        padding: 0px;
     }
 }
 /*LARGE*/
