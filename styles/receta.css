@@ -358,17 +358,7 @@ img.image-receta{
     i.fas.fa-bars{
         display: none;
     }
-    .footer-mobile{
-        display: none;
-    } 
-    ul.mobile{
-        display: none;
-    }
-    li.mobile{
-        display: none;
-    }
     .social-media {
-        position: absolute;
         left: 10%;
         position: static;
     }
