@@ -251,18 +251,27 @@ a.title{
 }
 body{
     padding: 10px;
+    margin: 0px auto;
 }
-div.container-receta, .banner, .container, .recipe, .image-receta, .post-details, div.social-media.sidebar, .social-media.sidebar ul{
+nav, div.container-receta, .banner, .container, .recipe, .image-receta, .post-details, div.social-media.sidebar, .social-media.sidebar ul{
     width: 90%;
     margin: 0px auto;
+}
+div.container-receta{
+    position: static;
 }
 nav.desktop{
     display: none;
 }
+.banner{
+    width: 100vw;
+    height: 15vh;
+    margin-top: 20px;
+}
 .mobile {
     text-align: center;
     display: inline-block;
-    margin: 10px auto;
+    margin: 0px auto;
     align-content: center;
     justify-content: center;
     background-color: coral;
@@ -287,11 +296,14 @@ p{
 section{
     margin: 0 auto;
 }
+ol{
+    margin: 10px 0px;
+}
 div.social-media.sidebar{
     display: flex;
     flex-direction: row;
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
     height: 50px;
 }
 .social-media{
@@ -303,7 +315,6 @@ div.social-media.sidebar{
     flex-flow: row;
     margin: 0 auto;
 }
-
 .social-media li{
     margin: 5px;
     padding: 0px;
@@ -334,22 +345,25 @@ img.image-receta{
     a.title{
         text-align: center;
         height: 80px;
-        }
+    }
     nav.mobile {
         display: none;
-            }
+    }
     i.fas.fa-bars{
         display: none;
     }
     .footer-mobile{
-        display: inline;
-    }
-    .footer-desktop{
+        display: none;
+    } 
+    ul.mobile{
         display: none;
     }
-    footer ul li{
-        padding: 0px;
-        margin: 5px;
+    li.mobile{
+        display: none;
+    }
+    .social-media {
+        position: absolute;
+        left: 10%;
     }
 }
 /*MEDIUM*/
@@ -362,7 +376,13 @@ img.image-receta{
         }
     .footer-mobile{
         display: none;
-    }  
+    } 
+    ul.mobile{
+        display: none;
+    }
+    li.mobile{
+        display: none;
+    }
 }
 /*LARGE*/
 @media only screen and (min-width: 1200px) { 
