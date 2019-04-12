@@ -382,7 +382,7 @@ footer i {
 
 @media (max-width: 576px) {
     body {
-        width: 100vh;
+        width: 100vw;
     }
     nav ul{
         display: none;
@@ -505,6 +505,6 @@ footer i {
     }
     .footerMobile a>.fas {
         position: absolute;
-        right: 0%;
+        right: 40%;
     }
 }
