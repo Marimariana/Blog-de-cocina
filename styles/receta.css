@@ -244,137 +244,123 @@ footer i {
 }
 
 /*PHONES*/
-@media (max-width: 576px) { 
-    .title{
-        text-align: center;
-        }
-        nav.desktop{
-         display: none;
-        }
-        nav.mobile{
-            display: block;
-            background-color: coral;
-            color: white;
-            margin: 0 auto;
-            height: 30px;
-            padding: 8px 68px;
-            text-align: center;
-            font-weight: bold;
-            position: absolute;
-            align-content: center;
-            justify-content: center;
-            border-radius: 21px;
-            align-self: center;
-            position: relative;
-        }
-        nav li {
-            display: none;
-        }
-        nav li:hover{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            z-index: 1;
-        }
-        ul p {
-            display: inline-flex;
-            width: 100px;
-            margin: 10px;
-            text-align: center;
-            line-height: 15px;
-        }
-        ul{
-            width: 100px;
-            text-align: center;
-        }
-    .dropbtn {
-        background-color: coral;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        font-family: Raleway;
-        font-weight: bold;
-      }
-      .fa-caret-down{
-          margin-left: 10px;
-      }
-      .dropdown {
-        position: relative;
-        display: block;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: coral;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      .dropdown-content a {
-        padding: 12px 16px;
-        display: block;
-      }
-      .dropdown-content a:hover {
-          color:coral;
-          background-color: #ddd;
-        }
-      .dropdown:hover .dropdown-content {
-          display: block;
-        }
-      .dropdown:hover .dropbtn {
-          color: coral;
-          background-color:  #ddd;
-        }
-
- }
- .sidebar {
+@media (max-width: 576px){ 
+a.title{
+    text-align: center;
+}
+body{
+    padding: 10px;
+}
+.container{
+    margin: 0px;
+}
+div.container-receta, .banner, .recipe, .image-receta, .post-details, div.social-media.sidebar, .social-media.sidebar ul{
+    width: 90%;
+    margin: 0px;
+}
+nav.desktop{
+    display: none;
+}
+.mobile {
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto;
+    align-content: center;
+    background-color: coral;
+    color: white;
+    width: 80%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: bold;
+    border-radius: 14px;
+}
+i.fas.fa-bars{
+    float: left;
+    margin: 0px auto;
+}
+.menu .fa-bars{
+   margin: 0 20px 0 10px;
+}
+p{
+    align-content: center;
+}
+div.social-media.sidebar{
     display: flex;
-        width: 70%;
-        overflow: hidden;
-        padding: 50px;
-      }
-      .social-media {
-          position: absolute;
-          left: 15%;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    height: 50px;
+}
+.social-media{
+    position: static;
+}
+.social-media.sidebar ul{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+}
 
-
-
-
-
-
-
-
- footer ul li{
+.social-media li{
+    margin: 5px;
+    padding: 0px;
+}
+.footer-mobile{
     display: inline;
- }
+}
+.footer-desktop{
+    display: none;
+}
 
-
-
-
-
-
-
-
+footer ul li{
+    padding: 0px;
+    margin: 5px;
+}
 
 /*TABLET*/
-@media screen (max-width: 768px) {
-    .title{
-    text-align: center;
+@media screen (min width: 577px) and (max-width: 768px){
+    a.title{
+        text-align: center;
+        height: 80px;
+        }
+    nav.mobile {
+        display: none;
+            }
+    i.fas.fa-bars{
+        display: none;
     }
-    nav.mobile{
-     display: none;
+    .footer-mobile{
+        display: inline;
     }
-}
+    .footer-desktop{
+        display: none;
+    }
+    footer ul li{
+        padding: 0px;
+        margin: 5px;
+    }
 /*MEDIUM*/
-@media screen (max-width: 992px) {
-    nav.mobile{
-    display: none;
+@media only screen (min width: 769px) and (max-width: 992px){
+    nav.mobile {
+        display: none;
+        }
+    i.fas.fa-bars{
+        display: none;
+        }
+    .footer-mobile{
+        display: none;
     }
+    
 }
 /*LARGE*/
-@media screen (max-width: 1200px) { 
-    nav.mobile{
+@media only screen (min width: 993px) and (max-width: 1200px) { 
+    nav.mobile {
+        display: none;
+        }
+    i.fas.fa-bars{
+        display: none;
+        }
+    .footer-mobile{
         display: none;
         }
  }
