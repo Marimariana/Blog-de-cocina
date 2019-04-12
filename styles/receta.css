@@ -107,6 +107,7 @@ nav li {
 .banner{
     background-image: url("../images/banner.jpg");
     height: 35vh;
+    width: 100%;
     background-position: center bottom;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -242,3 +243,188 @@ footer i {
     padding: 10px;
     padding-bottom: 30px;
 }
+.mobile{
+    display: none;
+}
+.footer-mobile{
+    display: none;
+}
+
+/*PHONES*/
+@media only screen and (max-width: 576px){ 
+a.title{
+    text-align: center;
+}
+body{
+    padding: 10px;
+    margin: 0px auto;
+}
+nav, div.container-receta, .banner, .container, .recipe, .image-receta, .post-details, div.social-media.sidebar, .social-media.sidebar ul{
+    width: 90%;
+    margin: 0px auto;
+}
+div.container-receta{
+    position: static;
+}
+nav.desktop{
+    display: none;
+}
+.banner{
+    width: 100vw;
+    height: 15vh;
+    margin-top: 20px;
+}
+.mobile {
+    text-align: center;
+    display: inline-block;
+    margin: 0px auto;
+    align-content: center;
+    justify-content: center;
+    background-color: coral;
+    color: white;
+    width: 80%;
+    padding: 5px 16px;
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: bold;
+    border-radius: 14px;
+}
+i.fas.fa-bars{
+    float: left;
+    margin: 0px auto;
+}
+.menu .fa-bars{
+   margin: 0 20px 0 10px;
+}
+p{
+    align-content: center;
+}
+section{
+    margin: 0 auto;
+}
+ol{
+    margin: 10px 0px;
+}
+div.social-media.sidebar{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px auto;
+    height: 50px;
+}
+.social-media{
+    position: static;
+}
+.social-media.sidebar ul{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    margin: 0 auto;
+}
+.social-media li{
+    margin: 5px;
+    padding: 0px;
+}
+.footer-mobile{
+    display: inline;
+    margin: 0px auto;
+}
+.footer-desktop{
+    display: none;
+}
+footer ul {
+    margin: 0 auto;
+}
+footer ul li{
+    padding: 0px;
+    margin: 5px;
+}
+li img{
+    width: 30px;
+}
+img.image-receta{
+    width: 100%;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px){
+    a.title{
+        text-align: center;
+        height: 80px;
+    }
+    nav.mobile {
+        display: none;
+    }
+    i.fas.fa-bars{
+        display: none;
+    }
+    .social-media {
+        left: 10%;
+        position: static;
+    }
+    div.social-media.sidebar{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px auto;
+        height: 50px;
+    }
+    .social-media.sidebar ul{
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        margin: 0 auto;
+    }
+    .social-media li{
+        margin: 5px;
+        padding: 0px;
+    }
+    .footer-mobile{
+        display: inline;
+        margin: 0px auto;
+    }
+    .footer-desktop{
+        display: none;
+    }
+    footer ul {
+        margin: 0 auto;
+    }
+    footer ul li{
+        padding: 0px;
+        margin: 5px;
+    }
+
+}
+/*MEDIUM*/
+@media only screen and (min-width: 992px){
+    nav.mobile {
+        display: none;
+        }
+    .footer-mobile{
+        display: none;
+        }
+    ul.mobile{
+        display: none;
+        }
+    li.mobile{
+        display: none;
+    }
+}
+/*LARGE*/
+@media only screen and (min-width: 1200px) { 
+    nav.mobile {
+        display: none;
+        }
+    i.fas.fa-bars{
+        display: none;
+        }
+    .footer-mobile{
+        display: none;
+        }
+    ul.mobile{
+        display: none;
+    }
+    li.mobile{
+        display: none;
+    }
+ }
