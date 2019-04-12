@@ -194,7 +194,7 @@ nav li {
 .container2{
     display: flex;
     justify-content: center;
-    margin: 35px auto 20px;
+    margin: 35px auto;
     width: 95%%;
     height: 250px;
     align-items: center;
@@ -203,7 +203,7 @@ nav li {
     display: inline-flex;
     width: 27%;
     height: 200px;
-    margin: 2px 8px 2px;
+    margin: 2px 8px 2px 8px;
     overflow: hidden;
 }
 .img2{
@@ -237,7 +237,7 @@ nav li {
     margin: 0 auto;
     position: absolute;
     right: 10%;
-    top: 140%;
+    top: 155%;
 }
 .aside{
     display: flex;
@@ -283,7 +283,7 @@ a.about{
 
 }
 .container4{
-    margin: 0px auto 60px;
+    margin: 0px auto 40px;
     overflow: hidden;
     width: 50%;
     min-width: 400px;
@@ -392,7 +392,7 @@ footer i {
     }
     .container {
         display: block;
-        margin: 0 auto 30px;
+        margin-bottom: 30px;
     }
     .img {
         padding: 0;
@@ -412,7 +412,7 @@ footer i {
         margin: 0 auto;
     }
     .second-section {
-        width: 75%;
+        width: 95%;
         height: 300px;
     }
     .img2 {
@@ -470,9 +470,10 @@ footer i {
         margin: 35px auto 40px;
     }
     .container3 {
-        width: 80%;
-        margin: 0 auto 30px;
-        position: initial;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        left: 5%;
     }
     .about {
         width:100%;
@@ -486,14 +487,14 @@ footer i {
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid gainsboro;
-        margin: 15px auto 40px;
+        margin: 15px auto;
         width: 95%;
         height: 100px;
     }
     .footerMobile ul li {
         display: inline;
-        margin: 0 10px 30px 10px;
-        padding: 20px;
+        margin: 0 2px 0px 2px;
+        padding: 15px;
     }
     .footerMobile .fab {
         font-size: 24px;
@@ -504,15 +505,6 @@ footer i {
     }
     .footerMobile a>.fas {
         position: absolute;
-        right: 30%;
+        right: 0%;
     }
 }
-
-
-@media (max-width: 768px) { ... }
-
-
-@media (max-width: 992px) { ... }
-
-
-@media (max-width: 1200px) { ... }
