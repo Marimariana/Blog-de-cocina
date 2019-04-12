@@ -245,7 +245,7 @@ footer i {
 }
 
 /*PHONES*/
-@media (max-width: 576px){ 
+@media only screen and (max-width: 576px){ 
 a.title{
     text-align: center;
 }
@@ -262,12 +262,13 @@ nav.desktop{
 .mobile {
     text-align: center;
     display: inline-block;
-    margin: 20px auto;
+    margin: 10px auto;
     align-content: center;
+    justify-content: center;
     background-color: coral;
     color: white;
     width: 80%;
-    padding: 12px 16px;
+    padding: 5px 16px;
     font-size: 16px;
     font-family: Raleway;
     font-weight: bold;
@@ -329,7 +330,7 @@ img.image-receta{
 }
 
 /*TABLET*/
-@media screen (min width: 577px) and (max-width: 768px){
+@media only screen and (min-width: 768px){
     a.title{
         text-align: center;
         height: 80px;
@@ -350,8 +351,9 @@ img.image-receta{
         padding: 0px;
         margin: 5px;
     }
+}
 /*MEDIUM*/
-@media only screen (min width: 769px) and (max-width: 992px){
+@media only screen and (min-width: 992px){
     nav.mobile {
         display: none;
         }
@@ -360,11 +362,10 @@ img.image-receta{
         }
     .footer-mobile{
         display: none;
-    }
-    
+    }  
 }
 /*LARGE*/
-@media only screen (min width: 993px) and (max-width: 1200px) { 
+@media only screen and (min-width: 1200px) { 
     nav.mobile {
         display: none;
         }
@@ -374,4 +375,10 @@ img.image-receta{
     .footer-mobile{
         display: none;
         }
+    ul.mobile{
+        display: none;
+    }
+    li.mobile{
+        display: none;
+    }
  }
