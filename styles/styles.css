@@ -246,11 +246,11 @@ nav li {
     align-content: center;
     align-items: center;
     width: 90%;
-    margin: 0px;
+    margin: 50px 0px;
     text-align: center;
 }
 .profile-pic{
-    margin: 35px auto 30px;
+    margin: 35px 10px;
     border-radius: 100%;
     width: 200px;
     height: 200px;
