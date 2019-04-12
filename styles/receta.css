@@ -107,6 +107,7 @@ nav li {
 .banner{
     background-image: url("../images/banner.jpg");
     height: 35vh;
+    width: 100%;
     background-position: center bottom;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -251,12 +252,9 @@ a.title{
 body{
     padding: 10px;
 }
-.container{
-    margin: 0px;
-}
-div.container-receta, .banner, .recipe, .image-receta, .post-details, div.social-media.sidebar, .social-media.sidebar ul{
+div.container-receta, .banner, .container, .recipe, .image-receta, .post-details, div.social-media.sidebar, .social-media.sidebar ul{
     width: 90%;
-    margin: 0px;
+    margin: 0px auto;
 }
 nav.desktop{
     display: none;
@@ -285,6 +283,9 @@ i.fas.fa-bars{
 p{
     align-content: center;
 }
+section{
+    margin: 0 auto;
+}
 div.social-media.sidebar{
     display: flex;
     flex-direction: row;
@@ -299,6 +300,7 @@ div.social-media.sidebar{
     display: flex;
     flex-direction: row;
     flex-flow: row;
+    margin: 0 auto;
 }
 
 .social-media li{
@@ -307,14 +309,23 @@ div.social-media.sidebar{
 }
 .footer-mobile{
     display: inline;
+    margin: 0px auto;
 }
 .footer-desktop{
     display: none;
 }
-
+footer ul {
+    margin: 0 auto;
+}
 footer ul li{
     padding: 0px;
     margin: 5px;
+}
+li img{
+    width: 30px;
+}
+img.image-receta{
+    width: 100%;
 }
 
 /*TABLET*/
