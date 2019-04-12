@@ -235,8 +235,9 @@ nav li {
 .container3{
     width: 25%;
     margin: 0 auto;
-    float: right;
-    margin-right: 10%;
+    position: absolute;
+    right: 10%;
+    top: 140%;
 }
 .aside{
     display: flex;
@@ -249,7 +250,7 @@ nav li {
     text-align: center;
 }
 .profile-pic{
-    margin-top: 10px;
+    margin: 35px auto 30px;
     border-radius: 100%;
     width: 200px;
     height: 200px;
@@ -260,11 +261,13 @@ nav li {
 .title{
     font-family: Raleway;
     font-size: 24px;
+    margin-bottom: 10px;
 }
 .paragraph{
     text-align: center;
     line-height: 20px;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 .about{
     background-color: #ffc4ae;
@@ -285,6 +288,8 @@ a.about{
     width: 50%;
     min-width: 400px;
     max-width: 900px;
+    position: relative;
+    right: 195px;
 }
 .video{
     display: flex;
@@ -297,7 +302,7 @@ a.about{
     margin:5px 0 30px 0;
     font-size: 12px;
 }
-.notas {
+.notas, .notas2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -351,9 +356,13 @@ a.about{
 /*FOOTER*/
 
 footer {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid gainsboro;
     margin-bottom: 40px;
+    width: 100%;
 }
 footer ul li{
     display: inline;
@@ -365,10 +374,16 @@ footer i {
     padding: 10px;
     padding-bottom: 30px;
 }
+.footerMobile {
+    display: none;
+}
 
 /*RESPONSIVE*/
 
 @media (max-width: 576px) {
+    body {
+        width: 100vh;
+    }
     nav ul{
         display: none;
     }
@@ -377,19 +392,23 @@ footer i {
     }
     .container {
         display: block;
-        width: 60vh;
-        margin: 0 auto;
+        margin: 0 auto 30px;
+    }
+    .img {
+        padding: 0;
     }
     .img-2,.img-3,.img-4 {
         display: none;
     }
     .img-1 {
         padding: 0px;
+        height: 145vh;
     }
     .container2 {
-        display: block;
-        width: 75vh;
-        height: 675px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vh;
+        height: 970px;
         margin: 0 auto;
     }
     .second-section {
@@ -397,7 +416,7 @@ footer i {
         height: 300px;
     }
     .img2 {
-        height: 295px;
+        height: 300px;
     }
     .pill-button {
         margin: 0 100px;
@@ -405,9 +424,89 @@ footer i {
         padding: 15px 70px;
         font-size: 22px;
     }
+    .second-section:hover .img2 {
+        display: none;
+    }
+    .video, .notas2, .nota1{
+        display:none;
+    }
+    .container4 {
+        margin: 40px auto 30px;
+        width: 90%;
+        position: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .notas {
+        border-top: none;
+    }
+    .interaction-list {
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+        padding: 4px;
+    }
+    .art .title {
+        margin: 40px auto 5px;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .art .paragraph2 {
+        margin: 10px auto 40px;
+        justify-content: center;
+        text-align: center;
+        font-size: 22px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 140px;
+        padding: 10px;
+        margin: 35px auto 40px;
+    }
+    .container3 {
+        width: 80%;
+        margin: 0 auto 30px;
+        position: initial;
+    }
+    .about {
+        width:100%;
+    }
+    footer {
+        display: none;
+    }
+    .footerMobile {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid gainsboro;
+        margin: 15px auto 40px;
+        width: 95%;
+        height: 100px;
+    }
+    .footerMobile ul li {
+        display: inline;
+        margin: 0 10px 30px 10px;
+        padding: 20px;
+    }
+    .footerMobile .fab {
+        font-size: 24px;
+    }
+    .fa-arrow-circle-up {
+        color: coral;
+        font-size: 55px;
+    }
+    .footerMobile a>.fas {
+        position: absolute;
+        right: 30%;
+    }
 }
-
-@media (max-width: 576px) { ... }
 
 
 @media (max-width: 768px) { ... }
