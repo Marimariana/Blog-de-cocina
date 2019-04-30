@@ -129,6 +129,7 @@ nav li {
 .img {
     padding: 6px;
 }
+/*se repite cuatro veces el mismo bloque de código. se podría haber agrupado a los elemento con una sola clase*/
 .img-1{
     background-image: url(../images/img-1.jpg);
     height: 80vh;
@@ -161,7 +162,7 @@ nav li {
     background-size: cover;
     overflow:hidden;
 }
-.hover{
+.hover{/*la clase debería ser más específica*/
     display: block;
     background-size: contain;
     background-color: rgba(250, 161, 60, 0.582);
@@ -195,7 +196,7 @@ nav li {
     display: flex;
     justify-content: center;
     margin: 35px auto;
-    width: 95%%;
+    width: 95%;
     height: 250px;
     align-items: center;
 }
@@ -210,7 +211,7 @@ nav li {
     border-radius: 25%;
     overflow: hidden;
     height: 200px;
-    background-position: center;
+    background-position: center;/*esta propiedad aplica cuando usamos una imagen de fondo, no funciona cuando tenemos una etiqueta <img> dentro de una caja*/
 }
 .pill-button{
     display: inline-block;
@@ -272,7 +273,7 @@ nav li {
 .about{
     background-color: #ffc4ae;
     color: black;
-    display: inline;
+    display: inline;/*los elementos inline ignoran width y height*/
     font-weight: bold;
     width: 302.39px;
     padding: 10px;
